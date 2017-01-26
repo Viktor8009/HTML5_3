@@ -1,0 +1,66 @@
+/* Facebook button */
+
+.btn-facebook{
+    
+    border: none;   
+    background-color: #3B5998;   
+    color: #F0F0F0;   
+    box-shadow: 0 0 3px #777777;
+    border-radius: 2px;
+    transiton: all 0.5s;
+}
+
+.btn-facebook:hover{   
+    box-shadow: 0 0 8px #777777;   
+}
+
+
+/*  Profile div */
+
+.profile-div form{
+    width: 50%;
+    margin: 10px auto;    
+}
+
+.profile-div{    
+    position:relative;
+    left:-100px;
+    top:100px;
+    opacity:0;
+    transition: all 1s;
+}
+
+.profile-div.show{   
+    position:relative;
+    animation-name: profile_show;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    left: 0;
+    top: 0;
+    opacity: 1;
+}
+
+
+/* Keyframes */
+
+@keyframes profile_show{
+    
+    0% {opacity: 0; left: -100%; top: 100px};
+    
+    50% {opacity: 0.5; left: 0; top: 100px};
+    
+    100% {opacity: 1; left: 0; top: 0};
+
+}
+
+h1 {
+    
+    font-weight: 700;
+    color:#00004F;
+}
+
+.lead {
+    
+    color:#0C0C0C;
+    
+}
